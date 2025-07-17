@@ -15,7 +15,7 @@ DEFAULT_ARGS = {
     "retries": 1
 }
 
-ENTITY = "orders"
+ENTITY = "products"
 DAG_ID = f"raw_{ENTITY}"
 SQL_PATH = os.path.join(os.path.dirname(__file__), f"config/{ENTITY}/sql/extraction_query.sql")
 GCS_BUCKET = "raw-northwind"

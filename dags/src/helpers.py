@@ -26,7 +26,6 @@ def build_query(bq_dataset, bq_table, sql_path, gcp_conn_id="google_cloud_defaul
     return final_sql
 
 
-
 def decide_next_task(bucket_name, object_name, gcp_conn_id, **kwargs):
     hook = GCSHook(gcp_conn_id=gcp_conn_id)
     print(object_name)

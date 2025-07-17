@@ -1,10 +1,10 @@
-SELECT
+SELECT 
+    OrderDetailID,
     OrderID,
-    CustomerID,
-    OrderDate,
-    ShipperID,
+    ProductID,
+    Quantity,
     created_at,
     updated_at
-FROM NORTHWIND.Orders
+FROM NORTHWIND.OrderDetails
 WHERE
     updated_at > '{{last_updated}}'
